@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/admin_panel.css">
+    <link rel="stylesheet" href="CSS/variable.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Admin</title>
+</head>
+<body>
+
+
+
+        <div class="head">
+           
+            <h1>ADMIN DASHBOARD</h1>
+        </div>
+
+   
+        <div class="main">
+        <div class="sidenav">
+
+            <ul>
+                <li onclick="first()">Add Product</li>
+                <li onclick="second()">Orders</li>
+                <li onclick="third()">Delivered Items</li>
+                <li onclick="fourth()">View Products</li>
+            </ul>
+            
+        </div>
+
+        <!-- First -->
+        <div class="first">
+            <h2>Add Item</h2>
+            <form action="" method="post" autocomplete="off">
+                
+        
+             <input type="text" name="" id="product_brand" placeholder="Product Brand">
+             <input type="text" name="" id="product_name" placeholder="Product Name">
+             <input type="number" name="" id="quantity" placeholder="Quantity">
+             <input type="file" name="img">
+             <input type="submit" value="Add">   
+            </form>
+           
+        </div>
+
+        <!-- Second -->
+        <div class="second">
+            <h2>New Orders</h2>
+            <div class="main">
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No</th>  
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Address Details</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Redmi note 5</td>
+                        <td>5</td>
+                        <td>2000</td>
+                        <td>Arun M,Palakkad,Veetimarakkad,Naripparachalla</td>
+                        <td><button>Delivered</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        </div>
+
+        <!-- Third -->
+        <div class="third">
+            <h2>Delivered Orders</h2>
+            <div class="main">
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.No</th>  
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Address Details</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Redmi note 5</td>
+                            <td>5</td>
+                            <td>2000</td>
+                            <td>Arun M,Palakkad,Veetimarakkad,Naripparachalla</td>
+                            <td>Delivered</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+
+        </div>
+
+        <!-- Fourth -->
+        <div class="fourth">
+
+        </div>
+
+   </div>
+         <script src="Script/admin_panel.js"></script>   
+
+</body>
+</html>
